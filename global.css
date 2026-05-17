@@ -1,0 +1,68 @@
+body {
+    font: 100%/1.5 system-ui, sans-serif;
+    display: flex;
+    flex-flow: column;
+    max-width: 80em;
+    min-height: 100vh;
+    box-sizing: border-box;
+    margin: auto;
+    padding: 1em;
+}
+
+header {
+    display: flex;
+    gap: 1em;
+    align-items: baseline;
+}
+
+label {
+    margin-left: auto;
+    display: flex;
+    gap: 0.5em;
+    align-items: baseline;
+}
+
+time {
+    display: block;
+    font-weight: bold;
+}
+
+em {
+    display: block;
+    color: #777;
+    font-style: italic;
+}
+
+.legend {
+    gap: 2px;
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    height: 40px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
+.legend .swatch {
+    flex: 1;
+    /* KEY: makes them stretch equally */
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+}
+
+/* colors (match your flow scale idea) */
+.legend .dep {
+    background: steelblue;
+}
+
+.legend .bal {
+    background: purple;
+}
+
+.legend .arr {
+    background: darkorange;
+}
